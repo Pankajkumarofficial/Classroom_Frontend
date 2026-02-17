@@ -93,29 +93,6 @@ const ClassesCreate = () => {
   const subjects = subjectsQuery.data?.data || [];
   const subjectsLoading = subjectsQuery.isLoading;
 
-  // const subjects = [
-  //   {
-  //     id: 1,
-  //     name: "Mathematics",
-  //     code: "MATH",
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Computer science",
-  //     code: "CS"
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Physics",
-  //     code: "PHYS"
-  //   },
-  //   {
-  //     id: 4,
-  //     name: "Chemistry",
-  //     code: "CHEM"
-  //   }
-  // ]
-
   return (
     <CreateView className="class-view">
       <Breadcrumb />
