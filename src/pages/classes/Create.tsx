@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -20,10 +19,8 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "@refinedev/react-hook-form";
-
 import { Breadcrumb } from "@/components/refine-ui/layout/breadcrumb";
 import { CreateView } from "@/components/refine-ui/views/create-view";
-
 import { Textarea } from "@/components/ui/textarea";
 import UploadWidget from "@/components/upload-widget";
 import { classSchema } from "@/lib/schema";
@@ -64,7 +61,6 @@ const ClassesCreate = () => {
     }
   };
 
-  // Fetch subjects list
   const { query: subjectsQuery } = useList<Subject>({
     resource: "subjects",
     pagination: {
@@ -72,7 +68,6 @@ const ClassesCreate = () => {
     },
   });
 
-  // Fetch teachers list
   const { query: teachersQuery } = useList<User>({
     resource: "users",
     filters: [
